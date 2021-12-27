@@ -28,30 +28,39 @@ Se estiver assim, tudo está funcionando como esperado, aguarde uns 2 minutos pa
 .
 ├── ...
 ├── app
-│   ├── accounts                 # não iremos mexer por agora mas conterá as páginas para acesso à área restrita
-│   ├── dashboard                # não iremos mexer por agora mas conterá os dashboards
-│   ├── static                   # ingore por enquanto
-│   ├── templates                # ingore por enquanto
-│   ├── website                  # onde vamos trabalhar, aqui é onde iremos passar a maior parte do tempo inicialmente
-|   │    ├── urls.py             # cada nova página que criarmos temos que adicionar aqui o mapeamento da url dela para o método da view.py
-|   │    ├── views.py            # toda nova página que criamos temos que adicionar um método na view.py para mapear para o arquivo
-|   │    ├── models.py           # pode ingorar
-|   │    ├── static              # static files (css, js, img)
-|   │    │   ├── css             # css files
-│   |    |   |    ├── style.css  # style css file
+│   ├── accounts                    # não iremos mexer por agora mas conterá as páginas para acesso à área restrita
+│   ├── dashboard                   # não iremos mexer por agora mas conterá os dashboards
+│   ├── static                      # ingore por enquanto
+│   ├── templates                   # ingore por enquanto
+│   ├── website                     # onde vamos trabalhar, aqui é onde iremos passar a maior parte do tempo inicialmente
+|   │    ├── urls.py                # cada nova página que criarmos temos que adicionar aqui o mapeamento da url dela para o método da view.py
+|   │    ├── views.py               # toda nova página que criamos temos que adicionar um método na view.py para mapear para o arquivo
+|   │    ├── models.py              # pode ingorar
+|   │    ├── static                 # static files (css, js, img)
+|   │    │   ├── css                # css files
+│   |    |   |    ├── style.css     # style css file
 │   |    |   |    └── ...
-│   |    |   ├── js              # js files
-│   |    |   |    ├── script.js  # main js file
+│   |    |   ├── js                 # js files
+│   |    |   |    ├── script.js     # main js file
 │   |    |   |    └── ...
-│   |    |   ├── img             # images folder
-│   |    |   |    ├── p.png      # image file
+│   |    |   ├── assets             # images folder
+│   |    |   |    ├── favicon.ico   # image file
 │   |    |   |    └── ...
 │   |    |   └── ...
-│   |    ├── templates           # aqui colocaremos nossas páginas html
-│   |    |   ├── index.html       # html file
-│   |    |   ├── about.html       # html file
+│   |    ├── templates              # aqui colocaremos nossas páginas html
+│   |    |   ├── index.html         # html file
+│   |    |   ├── about.html         # html file
 │   |    |   └── ...
-│   |    └── ...                 # etc.
+│   |    └── ...                    # etc.
+│   ├── modcs_prod                  # arquivos docker que utilizaremos quando formos fazer o deploy do novo site do MoDCS, pode ignorar por enquanto
+│   ├── nginx                       # arquivos do nginx que utilizaremos quando formos fazer o deploy do novo site do MoDCS, pode ignorar por enquanto
+│   ├── .gitignore                  # lista de arquivos que o git irá ignorar quando formos fazer os commits
+│   ├── docker-compose.yml          # arquivo de configuração para a criação dos nossos containers no ambiente de desenvolvimento, aqui só estamos criando o container da aplicação Django e do mongodb
+│   ├── Dockerfile                  # arquivo do docker para a criação da imagem do nosso container de desenvolvimento
+│   ├── env-sample                  # arquivo de exemplo para a criação do arquivo .env, esse arquivo .env é necessário para que você possa executar o projeto e representa as variáveis de ambiente que serão utilizadas nos containers
+│   ├── Jenkinsfile                 # arquivo do jenkins, para integração contínua, pode desconsiderar por enquanto
+│   ├── README.md                   # nosso famoso README.md
+│   ├── requirements.txt            # lista dos pacotes necessários do python para poder rodar nosso projeto
 |   └── ...
 └── ...
 ```
