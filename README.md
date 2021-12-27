@@ -56,5 +56,10 @@ Se estiver assim, tudo está funcionando como esperado, aguarde uns 2 minutos pa
 └── ...
 ```
 
+# Guidelines
+Não sobre escreva o branch principal do repositório (`main`), sempre que for fazer alguma alteração crie uma nova branch, trabalhe em cima dela e quando achar que ela está boa faça um pull request (PR) para o repositório. Então podemos revisar e sugerir alterações se necessário!
+
+Na dúvida, sempre pergunte antes de fazer o push!
+
 # Bem-vindo ao Django!
 Espero que vocês gostem do Django e que a gente consiga fazer um site massa para o professor Paulo!
