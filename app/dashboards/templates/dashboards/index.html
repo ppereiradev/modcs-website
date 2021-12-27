@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+{% load static %}
+{% load plotly_dash %}
+
+{% block header %}
+    {% plotly_header %}
+    <link rel="icon" type="image/x-icon" href="{% static 'dashboards/images/favicon.ico' %}" />
+    <link href="{% static 'dashboards/css/style.css' %}" rel="stylesheet" type="text/css">
+{% endblock header %}
+
+{% block content %}
+    <div>
+        <a id="logout" href="{% url 'accounts:logout' %}" class="btn btn-danger" role="button"> <i class="fas fa-sign-out-alt"></i> SAIR</a>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="{% plotly_class name='dsci_dashboard' %}">
+        {% plotly_direct name="dsci_dashboard" %}
+    </div>
+{% endblock content %}
+
+{% block footer %}
+    {% plotly_footer %}
+{% endblock footer %}
+

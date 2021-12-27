@@ -1,0 +1,52 @@
+{% extends "base_generic.html" %}
+{% load static %}
+
+{% block header %}
+    <link rel="icon" type="image/x-icon" href="{% static 'accounts/images/favicon.ico' %}" />
+    <link href="{% static 'accounts/css/style.css' %}" rel="stylesheet" type="text/css">
+{% endblock header %}
+
+{% block content %}
+<div class="container">
+  <div class="login">
+    <div class="row">
+        <div class="col-12">
+        <h2 class="mt-2 mb-4">Acesse o Dashboard da DSCI</h2>
+        <form method="post">
+            {% csrf_token %}
+
+            <div class="form-group">
+            <label for="id_email">Email:</label><br>
+            <input type="email" class="form-control {% if form.email.errors %}is-invalid{% endif %}" id="id_email"
+                name="email" value='{{ form.email.value|default:"" }}'>
+            {% if form.email.errors %}
+            <div class="invalid-feedback">{{ form.email.errors }}</div>
+            {% endif %}
+            </div>
+
+            <div class="form-group">
+            <label for="id_password">Senha:</label><br>
+            <input type="password" class="form-control {% if form.password.errors %}is-invalid{% endif %}"
+                id="id_password" name="password" value='{{ form.password.value|default:"" }}'>
+            {% if form.password.errors %}
+            <div class="invalid-feedback">{{ form.password.errors }}</div>
+            {% endif %}
+            </div>
+
+            <button type="submit" class="btn btn-primary col-12">Entrar</button>
+        </form>
+          <br>
+          <p>Esqueceu a senha? <a href="{% url 'accounts:password_reset' %}">Clique aqui</a></p>
+        </div>
+    </div>
+  </div>
+  <div class="footer">
+        {% comment %} <a href="http://ufrpe.br" target="_blank">
+                <img id="ufrpe-digital" src="{% static 'accounts/images/UFRPE-Digital-08.png' %}">
+        </a> {% endcomment %}
+        <a href="http://www.nti.ufrpe.br" target="_blank">
+                <img id="logo-std" src="{% static 'accounts/images/std_amarelo_transparente.png' %}">
+        </a>
+  </div>
+</div>
+{% endblock content %}

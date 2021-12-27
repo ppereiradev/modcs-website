@@ -1,0 +1,19 @@
+SECRET_KEY=$(openssl rand -base64 32)
+DEBUG=1
+# cadastrando django SU
+DJANGO_SUPERUSER_PASSWORD=uma_senha_para_superuser_django
+DJANGO_SUPERUSER_USERNAME=seu_username
+DJANGO_SUPERUSER_EMAIL=seu_email
+# os hosts permitidos acessar a aplicação
+ALLOWED_HOSTS=*
+# dados de acesso do mongo server
+MONGODB_HOST=modcs_website_mongo
+MONGODB_PORT=27017
+MONGODB_DB=modcs_website
+MONGODB_USER=usuario_para_o_mongo
+MONGODB_PASSWORD=senha_para_o_mongo
+# dados para envio do email
+EMAIL_HOST_USER=modcs@gmail.com
+EMAIL_HOST_PASSWORD=senha
+# domínio do dashboard
+DOMAIN=modcs.org

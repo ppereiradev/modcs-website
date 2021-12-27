@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    restart: unless-stopped
+    container_name: modcs_website
+    image: modcs_website:0.1.0
+    expose:
+      - 8000
+    env_file:
+      - .env
+    volumes:
+      - static-data:/home/user/vol/web
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+    container_name: modcs_website_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+
+  nginx:
+    build: ./nginx
+    restart: unless-stopped
+    container_name: modcs_website_nginx
+    image: modcs_website_nginx:0.1.0
+    volumes:
+      - static-data:/vol/static
+    ports:
+      - 80:80
+    depends_on:
+      - app
+
+volumes:
+  mongo-data:
+    driver: local
+  static-data:
+    driver: local

@@ -1,0 +1,364 @@
+html, body {
+    /*background-color:#0B2341;*/
+    /*background-color:#f4f3ef;*/
+    background-color:#303140;
+    font-family: Montserrat,Helvetica Neue,Arial,sans-serif;
+    color: white;
+}
+
+/*** FIRST ROW ***/
+.row-dashboard {
+    margin: 0;
+}
+
+.row-dashboard .col {
+    padding: 0px;
+}
+
+.row-dashboard .card-body-dashboard {
+    padding-bottom: 0px;
+}
+/*** CARDS ***/
+.card-dashboard {
+    height: 100%;
+}
+
+/*** ODS ***/
+.ods-html-img { 
+    width: 100%;
+}
+
+.ods-html-p { 
+    text-align: center;
+}
+
+.row-dashboard .col .ods-html-img {
+    padding: 0% 2%;
+}
+
+.row-dashboard .col .div-table {
+    width: 95%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.row-dashboard .col .table-dark {
+    color: #fff;
+    background-color: #303140;
+}
+
+.row-dashboard .col .table-dark tr {
+    background-color: rgba(255,255,255,0.05);
+}
+
+.row-dashboard .col .table-dark th {
+    border-color: #303140;
+}
+
+.row-dashboard .col .table-dark td {
+    border-color: #303140;
+}
+
+.row-dashboard .col .table-dark td:nth-child(2) {
+    text-align: right;
+}
+
+.row-dashboard .col .table-dark td:nth-child(3) {
+    text-align: right;
+}
+
+.row-dashboard .col .table-dark td:nth-child(4) {
+    text-align: right;
+}
+
+.row-dashboard .col .table-dark td:nth-child(5) {
+    text-align: right;
+}
+
+.row-dashboard .col .table-dark td:nth-child(6) {
+    text-align: right;
+}
+
+.row-dashboard .col .table-dark td:nth-child(7) {
+    text-align: right;
+}
+
+/*** SAUDE E QUALIDADE DE VIDA ***/
+.card-dashboard .card-body-dashboard .saude-html-div {
+    text-align: center;
+}
+
+.card-dashboard .card-body-dashboard .saude-html-img {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+.nav-tabs .nav-link.active {
+    font-weight:bold;
+    color:white;
+    background-color:#303140;
+}
+
+.nav-link {
+    color: white;
+}
+
+
+.django-plotly-dash-app-dsc_dashboard {
+    max-width: 98%;
+    margin: 0px auto;
+}
+
+
+.card {
+    background-color:#303140;
+}
+
+.dash-graph {
+    margin-left: 1%;
+}
+
+#logout {
+    float:right;
+}
+
+circle {
+    stroke-width: 20px;
+    width: 15px;
+    height: 15px;
+}
+
+#my-gauge-app1-1 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#my-gauge-app1-2 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#my-gauge-app1-3 svg {
+    width: 150px;
+    height: 150px;
+}
+
+
+#my-gauge-app1-4 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#my-gauge-app1-5 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#my-gauge-app1-6 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#my-tank-1 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#my-tank-1 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+
+#my-tank-2 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#my-tank-2 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+#my-tank-3 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#my-tank-3 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#row_2my-gauge-app1-1 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_2my-gauge-app1-2 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_2my-gauge-app1-3 svg {
+    width: 150px;
+    height: 150px;
+}
+
+
+#row_2my-gauge-app1-4 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_2my-gauge-app1-5 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_2my-gauge-app1-6 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_2my-tank-1 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#row_2my-tank-1 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+#row_2my-tank-2 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#row_2my-tank-2 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+#row_2my-tank-3 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#row_2my-tank-3 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+#row_2my-graduatedbar-1 {
+    margin-top: 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#row_3my-gauge-app1-1 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_3my-gauge-app1-2 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_3my-gauge-app1-3 svg {
+    width: 150px;
+    height: 150px;
+}
+
+
+#row_3my-gauge-app1-4 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_3my-gauge-app1-5 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_3my-gauge-app1-6 svg {
+    width: 150px;
+    height: 150px;
+}
+
+#row_3my-tank-1 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#row_3my-tank-1 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+#row_3my-tank-2 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#row_3my-tank-2 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+#row_3my-tank-3 {
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+#row_3my-tank-3 .daq-tank--light__container {
+    width: 70px;
+    height: 150px;
+}
+
+
+.label {
+    color:white;
+}
+
+.card .cRfgdB .scale {
+    fill: white;
+}
+
+
+.card .cRfgdB .needle {
+    stroke: white;
+    stroke-width: 5px;
+}

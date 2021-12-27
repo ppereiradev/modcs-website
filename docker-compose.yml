@@ -1,0 +1,41 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+    container_name: modcs_website
+    image: modcs_website:0.1.0
+    command: >
+      sh -c "python manage.py makemigrations
+             python manage.py migrate accounts --noinput
+             python manage.py migrate admin --noinput
+             python manage.py migrate auth --noinput
+             python manage.py migrate contenttypes --noinput
+             python manage.py migrate sessions --noinput
+             python manage.py migrate django_plotly_dash --fake --noinput
+             python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - 8000:8000
+    env_file:
+      - .env
+    depends_on:
+      - mongodb
+    volumes:
+      - ./app:/home/user/app
+
+  mongodb:
+    image: mongo:latest
+    restart: unless-stopped
+    container_name: modcs_website_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB_PASSWORD}
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+    driver: local

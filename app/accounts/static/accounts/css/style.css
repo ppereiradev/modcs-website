@@ -1,0 +1,37 @@
+html, body {
+    background-color:#f4f3ef;
+    font-family: Montserrat,Helvetica Neue,Arial,sans-serif;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+    background-color:#f4f3ef;
+    position: relative;
+}
+
+.login {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 6px;
+    padding: 30px;
+
+}
+
+.footer {
+    text-align: center;
+    margin-top:70%
+}
+
+#ufrpe-digital {
+    width: 20%;
+}
+
+#logo-std {
+    width: 7%;
+}
