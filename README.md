@@ -71,4 +71,4 @@ Não sobrescreva a branch principal do repositório (`main`), sempre que for faz
 Na dúvida, sempre pergunte antes de fazer o push!
 
 # Bem-vindo ao Django!
-Espero que vocês gostem do Django e que a gente consiga fazer um site massa para o professor Paulo.
+Espero que vocês gostem do Django e que a gente consiga fazer um site massa para o professor Paulo Maciel.
